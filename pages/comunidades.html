@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=800, initial-scale=0.5, maximum-scale=1.0, user-scalable=yes">
+    <title>PROYECTO 7-GT</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- menú superior -->
+        <div class="logo"><img src="../images/logocsuca.png" alt="logo" class="logos"></div>
+        <!-- Iconos redes sociales -->
+        <div class="social-icons" style="display:flex; gap:10px; align-items:center; margin-left:20px;">
+            <a href="https://www.facebook.com/p/Idrc-Csuca-7-GT-61559969888672/" target="_blank" title="Facebook"><i
+                    class="fab fa-facebook fa-lg" style="color:#fff;"></i></a>
+            <!--<a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-x-twitter fa-lg" style="color:#fff;"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg" style="color:#fff;"></i></a>-->
+            <a href="../pages/estado-del-tiempo.html" title="Estado del tiempo"
+                style="color:#fff; text-decoration:none;">
+                <i class="fa-solid fa-cloud" style="color:#fff;"></i> Estado del tiempo</a>
+        </div><!-- Fin Iconos redes sociales -->
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><img class="menu" src="../images/menu.png" alt="menu"></label>
+        <nav class="navigation">
+            <ul>
+                <!-- Elementos del menú -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/acercade.html">Proyecto</a></li>
+                <li><a href="../pages/consorcio.html">RRDISAN</a></li>
+                <!-- <li><a href="../pages/galeria.html">Galería</a>
+                    Submenú de Multimedia -->
+                <!-- <ul>
+                        <li><a href="#">Guatemala</a></li>
+                        <li><a href="#">Honduras</a></li>
+                        <li><a href="#">El Salvador</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="../pages/agrosiat.html">Agro-SIAT</a></li>
+                <li><a href="../pages/informes.html">Informes</a></li>
+                <li><a href="../pages/contacto.html">Contáctenos</a></li>
+
+
+                <!-- Enlaces a redes sociales -->
+            </ul>
+        </nav>
+    </header>
+    <!-- seccion de la descripcion del proyecto-->
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-md-8">
+                <hr>
+                <h1>Comunidades beneficiarias</h1>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="2">Población (Rural)</th>
+                        </tr>
+                        <tr>
+                            <th>País</th>
+                            <th>Comunidad / Municipio</th>
+                            <th>Departamento</th>
+                            <th>Etnia</th>
+                            <th scope="col">Hombres</th>
+                            <th>Mujeres</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Guatemala</td>
+                            <td>El Hawaii, Chiquimulilla, Ixcanal, Comapa</td>
+                            <td>Santa Rosa, Jutiapa</td>
+                            <td>Xincas</td>
+                            <td>18,423* (49.5%)</td>
+                            <td>18,795* (50.5%)</td>
+                        </tr>
+                        <tr>
+                            <td>El Salvador</td>
+                            <td>San Pedro Masahuat, San Pedro Nonualco, Santa María Ostuma, Sur de Tecoluca, San Luis
+                                Talpa, Olocuilta, Zacatecoluca</td>
+                            <td>La Paz, San Vicente</td>
+                            <td>Los Nonualcos</td>
+                            <td>41,978** (49%)</td>
+                            <td>43,509** (51%)</td>
+                        </tr>
+                        <tr>
+                            <td>Honduras</td>
+                            <td>Alauca, El triunfo, Lauterique, Tomalá</td>
+                            <td>El Paraíso, Choluteca, La Paz y Lempira</td>
+                            <td>LENCA</td>
+                            <td>52%***</td>
+                            <td>48%***</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>*Instituto Nacional de Estadística (INE), censo 2002 Guatemala.<br>**El Salvador, VI censo de población y V de vivienda 2007 y Almanaque 262 estado del desarrollo
+                    humano de los municipios de El Salvador 2009.<br>**(Rodríguez Urrutia, EA. 2013)<br>*** Instituto Nacional de Estadística (INE), censo 2002 Honduras</p>
+               
+            </div>
+            <div class="col-md-4" id="margin">
+                <div class="input-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar palabras clave...">
+                </div>
+                <div class="vertical-menu">
+                    <a href="../pages/acercade.html" class="active">Justificación</a>
+                    <a href="../pages/impacto.html">Impacto Esperado</a>
+                    <a href="../pages/objetivos.html">Objetivos</a>
+                    <a href="../pages/zonas.html">Información de las zonas de impacto</a>
+                    <a href="../pages/comunidades.html">Comunidades beneficiarias</a>
+                    <a href="../pages/metodologia.html">Metodología</a>
+                    <a href="../pages/resultados.html">Resultados esperados</a>
+                    <a href="../pages/referencias.html">Referencias bibliograficas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- seccion de la descripcion del proyecto-->
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <!-- Imagen de algun logo -->
+                        <img src="../images/isologoidrccsuca.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CSUCA-IDRC</h2>
+                <!-- agregar informacion -->
+
+                <P>Proyecto: Fortaleciendo sistemas inclusivos de ciencia e innovación en América Latina a través de una
+                    red de investigación colaborativa</P>
+                <a href="https://csuca.org/es/idrc-csuca/" target="_blank" class="more-info-btn">Más Información</a>
+
+            </div>
+            <div class="box">
+                <h2>PROYECTO 7-GT</h2>
+                <div class="direccion">
+                    <!-- coregir informacion y agregar si es necesario -->
+                    <p>Fortalecimiento de la Gestión del Riesgo en Sistemas Agroalimentarios que Contribuyen a la
+                        Seguridad
+                        Alimentaria y Nutricional para Enfrentar el Cambio Climático en el Corredor Seco de Guatemala,
+                        El
+                        Salvador y Honduras 2023-2025</p>
+                    <a href="https://csuca.org/es/category/noticias-idrc-7gt/" target="_blank">CSUCA-IDRC</a>
+                    <a href="pages/contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <!-- camabiar los derechos a los reales -->
+            <small>&copy; 2024 <b>IDRC-CSUCA</b> - Todos los Derechos Reservados.</small>
+
+        </div>
+    </footer>
+    <script src="../js/buscar.js"></script>
+    <!-- script buscar -->
+
+</body>
+
+</html>

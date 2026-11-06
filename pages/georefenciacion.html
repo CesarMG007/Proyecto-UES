@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>P7-GT Georefenciación El Salvador</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="icon" href="../images/favicon.png">
+   <style>
+      .gallery-item {
+         text-align: center;
+         cursor: pointer;
+      }
+
+      .gallery-item img {
+         transition: transform 0.3s ease;
+      }
+
+      .gallery-item img:hover {
+         transform: scale(1.05);
+      }
+
+      .gallery-item figcaption {
+         margin-top: 8px;
+         font-size: 0.9rem;
+         color: #444;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 6px;
+      }
+
+      .gallery-item figcaption i {
+         color: #007bff;
+      }
+   </style>
+</head>
+
+<body>
+   <header class="header">
+      <!-- menú superior -->
+      <div class="logo"><img src="../images/logocsuca.png" alt="logo" class="logos"></div>
+      <div class="social-icons" style="display:flex; gap:10px; align-items:center; margin-left:20px;">
+         <a href="https://www.facebook.com/p/Idrc-Csuca-7-GT-61559969888672/" target="_blank" title="Facebook">
+            <i class="fab fa-facebook fa-lg" style="color:#fff;"></i></a>
+         <a href="../pages/estado-del-tiempo.html" title="Estado del tiempo"
+            style="color:#fff; text-decoration:none;">
+            <i class="fa-solid fa-cloud" style="color:#fff;"></i> Estado del tiempo</a>
+      </div>
+      <input type="checkbox" id="toggle">
+      <label for="toggle"><img class="menu" src="../images/menu.png" alt="menu"></label>
+      <nav class="navigation">
+         <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/acercade.html">Proyecto</a></li>
+            <li><a href="../pages/consorcio.html">RRDISAN</a></li>
+            <li><a href="../pages/agrosiat.html">Agro-SIAT</a></li>
+            <li><a href="../pages/informes.html">Informes</a></li>
+            <li><a href="../pages/contacto.html">Contáctenos</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- seccion de la descripcion del proyecto-->
+   <div class="container" id="content">
+      <div class="row">
+         <div class="col-md-8">
+            <hr>
+            <h1>Georefenciación MIAF - El Salvador</h1>
+            <hr>
+
+            <!-- Galería dinámica -->
+            <div class="row g-3">
+               <div class="col-md-4 col-sm-6">
+                  <figure class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-title="Mapa 1 - Área de estudio" data-img="../images/mapa1.jpeg"
+                     data-desc="Este es el primer mapa con la delimitación del área de estudio.">
+                     <img src="../images/mapa1.jpeg" class="img-fluid rounded shadow" alt="Mapa 1">
+                     <figcaption><i class="fa-solid fa-magnifying-glass"></i> Mapa 1</figcaption>
+                  </figure>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <figure class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-title="Mapa 2 - Distribución" data-img="../images/mapa2.jpeg"
+                     data-desc="Mapa que muestra la distribución de las parcelas.">
+                     <img src="../images/mapa2.jpeg" class="img-fluid rounded shadow" alt="Mapa 2">
+                     <figcaption><i class="fa-solid fa-magnifying-glass"></i> Mapa 2</figcaption>
+                  </figure>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <figure class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-title="Mapa 3 - Georreferenciación" data-img="../images/mapa3.jpeg"
+                     data-desc="Mapa con los puntos de georreferenciación del proyecto.">
+                     <img src="../images/mapa3.jpeg" class="img-fluid rounded shadow" alt="Mapa 3">
+                     <figcaption><i class="fa-solid fa-magnifying-glass"></i> Mapa 3</figcaption>
+                  </figure>
+               </div>
+            </div>
+
+            <!-- Modal dinámico -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Título de la imagen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                     </div>
+                     <div class="modal-body text-center">
+                        <img id="modalImage" src="" class="img-fluid rounded mb-3" alt="Imagen">
+                        <p id="modalDesc"></p>
+                        <a id="downloadBtn" href="#" download class="btn btn-primary">
+                           <i class="fa-solid fa-download"></i> Descargar Imagen
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div> <!--fin col-md-8-->
+
+         <div class="col-md-4" id="margin">
+            <div class="input-box">
+               <i class="uil uil-search"></i>
+               <input type="text" id="searchInput" placeholder="Buscar palabras clave...">
+            </div>
+            <div class="vertical-menu">
+               <a href="../pages/agrosiat.html" class="active">Agro-SIAT</a>
+               <a href="../pages/miaf.html">Parcelas demostrativas MIAF</a>
+               <a href="../pages/participacion.html">Participación equitativa</a>
+               <a href="../pages/material.html">Material educativo</a>
+               <a href="../pages/maps.html">Fortalecimiento MAPs</a>
+               <a href="../pages/boletines2025.html">Boletines agroclimáticos</a>
+               <a href="../pages/agrometeorologia.html">Curso de Agrometeorología</a>
+               <a href="../pages/per.html">Modelo P-E-R</a>
+               <a href="../pages/georefenciacion.html">Georefenciación MIAF</a>
+               <a href="../pages/sat.html">Diseño Sistema de Alerta Temprana</a>
+               <a href="../pages/estado-del-tiempo.html">Condiciones del estado del tiempo</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- footer -->
+   <footer class="pie-pagina">
+      <div class="grupo-1">
+         <div class="box">
+            <figure>
+               <a href="#">
+                  <img src="../images/isologoidrccsuca.png" alt="logo">
+               </a>
+            </figure>
+         </div>
+         <div class="box">
+            <h2>CSUCA-IDRC</h2>
+            <p>Proyecto: Fortaleciendo sistemas inclusivos de ciencia e innovación en América Latina a través de una
+               red de investigación colaborativa</p>
+            <a href="https://csuca.org/es/idrc-csuca/" target="_blank" class="more-info-btn">Más Información</a>
+         </div>
+         <div class="box">
+            <h2>PROYECTO 7-GT</h2>
+            <div class="direccion">
+               <p>Fortalecimiento de la Gestión del Riesgo en Sistemas Agroalimentarios que Contribuyen a la
+                  Seguridad Alimentaria y Nutricional para Enfrentar el Cambio Climático en el Corredor Seco de Guatemala,
+                  El Salvador y Honduras 2023-2025</p>
+               <a href="https://csuca.org/es/category/noticias-idrc-7gt/" target="_blank">CSUCA-IDRC</a>
+               <a href="pages/contacto.html">CONTACTO</a>
+            </div>
+         </div>
+      </div>
+      <div class="grupo-2">
+         <small>&copy; 2024 <b>IDRC-CSUCA</b> - Todos los Derechos Reservados.</small>
+      </div>
+   </footer>
+
+   <script src="../js/buscar.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Script para modal dinámico -->
+   <script>
+      const imageModal = document.getElementById('imageModal');
+      imageModal.addEventListener('show.bs.modal', event => {
+         const trigger = event.relatedTarget;
+         const title = trigger.getAttribute('data-title');
+         const imgSrc = trigger.getAttribute('data-img');
+         const desc = trigger.getAttribute('data-desc');
+
+         const modalTitle = imageModal.querySelector('.modal-title');
+         const modalImage = document.getElementById('modalImage');
+         const modalDesc = document.getElementById('modalDesc');
+         const downloadBtn = document.getElementById('downloadBtn');
+
+         modalTitle.textContent = title;
+         modalImage.src = imgSrc;
+         modalDesc.textContent = desc;
+         downloadBtn.href = imgSrc;
+      });
+   </script>
+
+</body>
+</html>
