@@ -1,0 +1,162 @@
+/* ========================================== */
+/* VARIABLES DE COLOR Y ESTILOS GLOBALES      */
+/* ========================================== */
+:root {
+    --primary-color: #8B1C2E; /* Color guinda (paleta de colores) */
+    --secondary-color: #4A0D15; /* Guinda más oscuro */
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Quita los márgenes por defecto */
+body {
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================== */
+/* NAVBAR                                     */
+/* ========================================== */
+
+/* Fuerza que la navbar se pegue al borde */
+.navbar-custom {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--white); 
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tamaño del logo principal (UES) */
+.logosUES {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+}
+
+/* Logos del centro (IDRC, CRDI, etc.) */
+.logos-centro {
+    height: 40px;
+    width: auto;
+    justify-content: flex-start;
+}
+
+/* Enlaces del menú */
+.navbar-custom .nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    padding: 20px 15px; /* Para que la barra tenga altura */
+    transition: all 0.2s;
+}
+
+/* Colores al pasar el mouse encima de los links */
+.navbar-custom .nav-link:hover {
+    color: var(--secondary-color) !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Ajuste del texto de "Estado del Tiempo" para que quede en dos líneas */
+.nav-link-dos-lineas {
+    text-align: center;
+    line-height: 1.1;
+    font-size: 0.9rem;
+}
+
+/* ========================================== */
+/* SECCIONES DE PROYECTOS                     */
+/* ========================================== */
+
+/* Barra superior guinda */
+.bg-guinda {
+    background-color: #7A1427;
+}
+
+/* Fondo gris claro para la columna izquierda */
+.bg-light-gray {
+    background-color: #E6E6E6;
+}
+
+/* ========================================== */
+/* ZONAS DE IMPACTO                           */
+/* ========================================== */
+
+/* Cuadrícula de 3 columnas adaptable */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* Tarjetas de las zonas (Se usa card-zona para no chocar con Bootstrap) */
+.card-zona {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary-color);
+    
+    /* Transición para el efecto de elevación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto Hover (Selección tipo personaje) */
+.card-zona:hover {
+    background-color: var(--white); /* Se mantiene blanco */
+    transform: translateY(-8px); /* Se eleva 8px */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Sombra negra difuminada */
+    cursor: pointer;
+}
+
+.card-zona h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-zona p {
+    color: #333333; /* Texto gris oscuro para buena lectura */
+    line-height: 1.6;
+}
+
+/* Encabezado de la sección de zonas */
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 3.5rem auto;
+}
+
+/* El footer de la pagina  */
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 2.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}

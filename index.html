@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    
+    <!-- Boostrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Link del CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <!-- NAVBAR-->
+   
+    <nav class="navbar navbar-expand-lg navbar-custom w-100">
+        <div class="container-fluid px-0">
+            
+            <!-- Logo UES a la izquierda -->
+            <a class="navbar-brand ms-3" href="index.html">
+                <img src="multimedia/image/LogoUES.png" alt="Logo UES" class="logosUES">
+            </a>
+
+            <!-- Boton hamburguesa para moviles -->
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- CONTENIDO COLAPSABLE -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <!-- Logos institucionales (derecha del de UES)-->
+                <div class="d-none d-lg-flex">
+                    <img src="multimedia/image/LogosExternos.png" alt="logos externos" class="logos-centro">
+                </div>
+
+                <!-- Enlaces (Derecha) -->
+                <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-dos-lineas" href="#">Estado del<br>Tiempo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/Justificación.html">Proyecto 7gt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyecto 3gt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Informes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Banner-->
+   
+    <div class="container-fluid px-0 position-relative">
+        <img src="multimedia/image/galeria/metodologia4.jpg" alt="Comunidad" class="img-fluid w-100" style="max-height: 500px; object-fit: cover; opacity: 0.7;">
+        
+        <!-- Texto superpuesto en el centro -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="width: 80%; max-width: 800px;">
+            <h4 class="mb-3">Proyecto 7gt y 3gt</h4>
+            <p class="fs-5">
+                Fortalecimiento de la gestion del riesgo en los sistemas agroalimentarios que contribuya a la seguridad alimentaria y nutricional para enfrentar el cambio climático del Corredor Seco de Guatemala, El Salvador y Honduras 2023-2024
+            </p>
+            <div class="position-absolute end-0 m-4">
+                <button class="btn btn-light rounded-pill px-4">Mas Informacion</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- APARTADO: PROYECTOS (7-GT y 3-GT) -->
+  
+    <div class="bg-guinda text-white text-center py-4">
+        <h2 class="m-0 fw-normal" style="font-family: serif;">Bienvenidos(as)</h2>
+    </div>
+
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            
+            <!-- COLUMNA IZQUIERDA: Proyecto 7-GT -->
+            <div class="col-md-6 bg-light-gray text-center py-5 px-4 d-flex flex-column align-items-center">
+                <a href="#" class="btn text-white fw-bold px-4 py-2 mb-5 rounded-1" style="background-color: #8B1C2E; font-size: 1.2rem;">
+                    Proyecto 7-GT
+                </a>
+                <p class="fw-bold text-dark mb-5" style="max-width: 450px; font-size: 0.95rem; line-height: 1.5;">
+                    Fortalecimiento de la gestión del riesgo en los sistemas agroalimentarios que contribuya a la seguridad alimentaria y nutricional para enfrentar el cambio climático del Corredor Seco de Guatemala, El Salvador y Honduras 2023-2024
+                </p>
+                <div class="d-flex justify-content-center align-items-center gap-4 mt-auto">
+                    <img src="multimedia/image/LogosExternos.png" alt="IDRC" style="height: 30px;">
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: Proyecto 3-GT -->
+            <div class="col-md-6 bg-white text-center py-5 px-4 d-flex flex-column align-items-center">
+                <a href="#" class="btn text-white fw-bold px-4 py-2 mb-5 rounded-1" style="background-color: #8B1C2E; font-size: 1.2rem;">
+                    Proyecto 3-GT
+                </a>
+                <p class="fw-bold text-dark mb-5" style="max-width: 450px; font-size: 0.95rem; line-height: 1.5;">
+                    Fortalecimiento de la gestión del riesgo en los sistemas agroalimentarios que contribuya a la seguridad alimentaria y nutricional para enfrentar el cambio climático del Corredor Seco de Guatemala, El Salvador y Honduras 2023-2024
+                </p>
+                <div class="d-flex justify-content-center align-items-center gap-4 mt-auto">
+                    <img src="multimedia/image/LogoUES.png" style="width: 50px; height: 50px;" alt="Logo UES">
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- Seccion de las cards (La metodologia)-->
+   
+    <div class="container mt-5 mb-5">
+        <h1 class="text-white mb-4 text-center">Metodología de trabajo</h1>
+        
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="multimedia/image/galeria/metodologia1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Diagnóstico</h5>
+                        <p class="card-text">Objetivo 1 y 5</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="multimedia/image/galeria/metodologia2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Implementación de técnicas y desarrollo del SIAT</h5>
+                        <p class="card-text">(Objetivo 2 y 3)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="multimedia/image/galeria/metodologia3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aplicación de las MIAF y las SAF</h5>
+                        <p class="card-text">(Objetivo 4)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Zonas de impacto del proyecto-->
+
+    <section class="section mb-5 pb-5" style="background-color: #f8f9fa;">
+        <div class="container pt-4">
+            <div class="section-header mb-4">
+                <h2 class="text-center text-dark">Zonas de impacto</h2>
+                <p class="text-center text-muted">Países relacionados</p>
+            </div>
+            <div class="grid-3">
+                <!-- Usamos card-zona en lugar de card para no chocar con Bootstrap -->
+                <div class="card-zona">
+                    <h3>El Salvador</h3>
+                    <p>En El Salvador, específicamente en el departamento de La Paz en la zona Paracentral del país.</p>
+                </div>
+                <div class="card-zona">
+                    <h3>Honduras</h3>
+                    <p>En Honduras se tendrá incidencia en cuatro municipios, todos ubicados en el Corredor Seco.</p>
+                </div>
+                <div class="card-zona">
+                    <h3>Guatemala</h3>
+                    <p>En Guatemala, el Corredor Seco es en la actualidad el paisaje que se extiende en los departamentos de Baja Verapaz, El Progreso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- scripts-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  
+    <!-- El footer -->
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="m-0">&copy; 2026 Instituto Técnico Ricaldone. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">IEAHH</a>
+                <a href="#">Universidad de El Salvador</a>
+                <a href="#">Cesar Miguel</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
